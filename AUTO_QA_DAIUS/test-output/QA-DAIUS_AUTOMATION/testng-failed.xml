@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [QA-DAIUS_AUTOMATION]">
+  <parameter name="x-msisdn" value="9123456789"/>
+  <test name="HomePage(failed)">
+    <classes>
+      <class name="com.drg.helpers.DataProviderInvoker">
+        <methods>
+          <include name="searchInputs"/>
+        </methods>
+      </class> <!-- com.drg.helpers.DataProviderInvoker -->
+      <class name="com.drg.methodFlows.startUp">
+        <methods>
+          <include name="Launch"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.drg.methodFlows.startUp -->
+    </classes>
+  </test> <!-- HomePage(failed) -->
+</suite> <!-- Failed suite [QA-DAIUS_AUTOMATION] -->

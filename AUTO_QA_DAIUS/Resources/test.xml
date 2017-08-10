@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CVAS_Portal_Automation">
+<parameter name="Launch" value="Resources\\TestMethod1.xlsx"/>
+<parameter name="newUserLoginCheck" value="Resources\\TestMethod1.xlsx"/>
+<parameter name="newUserTNCcheck" value="Resources\\TestMethod1.xlsx"/>
+<parameter name="noSubscriptionCheckMyLocker" value="Resources\\TestMethod1.xlsx"/>
+<test name="initialization">
+<classes>
+<class name="com.drg.methodFlows.startUp">
+<methods>
+<include name="Launch"/>
+</methods>
+</class>
+</classes>
+</test>
+<test name="newUserValidation">
+<classes>
+<class name="com.drg.methodFlows.isNewuser">
+<methods>
+<include name="newUserLoginCheck"/>
+<include name="newUserTNCcheck"/>
+<include name="noSubscriptionCheckMyLocker"/>
+</methods>
+</class>
+</classes>
+</test>
+</suite>

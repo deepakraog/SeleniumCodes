@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QA-DAIUS_AUTOMATION">
+
+	<parameter name="x-msisdn" value="9123456789" />
+
+	<test name="HomePage" preserve-order="true">
+		<classes>
+			<class name="com.drg.methodFlows.startUp">
+				<methods>
+					<include name="Launch" />
+					<!--  include name="searchContents" /-->
+				</methods>
+			</class>
+			<class name="com.drg.helpers.DataProviderInvoker">
+				<methods>
+					<include name="searchInputs" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

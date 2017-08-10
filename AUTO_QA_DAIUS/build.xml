@@ -1,0 +1,64 @@
+<project name="Sample Ant build" basedir=".">
+	<!-- ========== Initialize Properties =================================== -->
+	<!-- set global properties for build -->
+	<property name="basedir" value="." />
+	<property name="lib" value="${basedir}/lib" />
+	<property name="src" value="${basedir}/src" />
+	<property name="bin" value="${basedir}/bin" />
+	<property name="report-dir" value="${basedir}/Test-Report" />
+	<property name="testng-report-dir" value="${report-dir}/TestNGreport" />
+	<property name="xslt-report-dir" value="${report-dir}/XSLTreport" />
+
+	<!-- ====== Set the classpath ====  -->
+	<path id="classpath">
+		<pathelement location="${bin}" />
+		<fileset dir="${lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<!-- Delete directories  -->
+	<target name="clean">
+		<delete dir="${bin}" />
+		<delete dir="${report-dir}" />
+		<echo> /* Deleting bin and Report Directories */ </echo>
+	</target>
+
+	<!-- Creating directories -->
+	<target name="create" depends="clean">
+		<echo> /* Creating bin and Report Directories */ </echo>
+		<mkdir dir="${bin}" />
+		<mkdir dir="${report-dir}" />
+	</target>
+
+	<!-- Compile the java code from ${src} into ${bin} -->
+	<target name="compile" depends="create">
+		<javac srcdir="${src}" classpathref="classpath" includeAntRuntime="No" destdir="${bin}" />
+		<echo> /* Compiled Directory Classes */ </echo>
+	</target>
+
+	<!-- Runs the file and generates Reportng report for TestNG-->
+	<taskdef name="testng" classname="org.testng.TestNGAntTask" classpathref="classpath" />
+
+	<target name="run" depends="compile">
+		<mkdir dir="${testng-report-dir}" />
+		<echo> /* TestNG Report Generation */ </echo>
+		<testng outputdir="${testng-report-dir}" classpathref="classpath" useDefaultListeners="true">
+			<xmlfileset dir="${basedir}" includes="testng.xml" />
+		</testng>
+	</target>
+
+	<!-- Runs the file and generates XSLT report for TestNG-->
+	<target name="xslt">
+		<mkdir dir="${xslt-report-dir}" />
+		<echo> /* XSLT Report Generation */ </echo>
+		<xslt in="${testng-report-dir}/testng-results.xml" style="${basedir}/testng-results.xsl" out="${xslt-report-dir}/testng-xslt/index.html" processor="SaxonLiaison">
+			<param expression="${xslt-report-dir}/testng-xslt/" name="testNgXslt.outputDir" />
+			<param expression="true" name="testNgXslt.sortTestCaseLinks" />
+			<param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+			<param expression="true" name="testNgXslt.showRuntimeTotals" />
+			<classpath refid="classpath">
+			</classpath>
+		</xslt>
+	</target>
+</project>

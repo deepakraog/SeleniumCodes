@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CVAS_Portal_Automation]">
+  <parameter name="horizontalMenuThemeExists" value="Resources\\horizontalMenu.xlsx"/>
+  <parameter name="newUserTNCcheck" value="Resources\\newUserValidation.xlsx"/>
+  <parameter name="newUserLoginCheck" value="Resources\\newUserValidation.xlsx"/>
+  <parameter name="homeHorizontalMenuClick" value="Resources\\horizontalMenu.xlsx"/>
+  <parameter name="wallpaperHorizontalMenuClick" value="Resources\\horizontalMenu.xlsx"/>
+  <parameter name="myStatusHorizontalMenuClick" value="Resources\\horizontalMenu.xlsx"/>
+  <parameter name="headerLogoCheck" value="Resources\\icons.xlsx"/>
+  <parameter name="Launch" value="Resources\\TestMethod1.xlsx"/>
+  <parameter name="musicHorizontalMenuClick" value="Resources\\horizontalMenu.xlsx"/>
+  <parameter name="videoHorizontalMenuClick" value="Resources\\horizontalMenu.xlsx"/>
+  <parameter name="gameHorizontalMenuClick" value="Resources\\horizontalMenu.xlsx"/>
+  <parameter name="noSubscriptionCheckMyLocker" value="Resources\\newUserValidation.xlsx"/>
+  <test name="initialization(failed)">
+    <classes>
+      <class name="com.drg.methodFlows.startUp">
+        <methods>
+          <include name="Launch"/>
+        </methods>
+      </class> <!-- com.drg.methodFlows.startUp -->
+      <class name="com.drg.methodFlows.iconChecks">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.drg.methodFlows.iconChecks -->
+    </classes>
+  </test> <!-- initialization(failed) -->
+  <test name="newUserValidation(failed)">
+    <classes>
+      <class name="com.drg.methodFlows.isNewuser">
+        <methods>
+          <include name="newUserLoginCheck"/>
+          <include name="noSubscriptionCheckMyLocker"/>
+          <include name="newUserTNCcheck"/>
+        </methods>
+      </class> <!-- com.drg.methodFlows.isNewuser -->
+      <class name="com.drg.methodFlows.iconChecks">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.drg.methodFlows.iconChecks -->
+    </classes>
+  </test> <!-- newUserValidation(failed) -->
+  <test name="horizontalMenu(failed)">
+    <classes>
+      <class name="com.drg.methodFlows.horizontalMenuDetails">
+        <methods>
+          <include name="gameHorizontalMenuClick"/>
+          <include name="videoHorizontalMenuClick"/>
+          <include name="homeHorizontalMenuClick"/>
+          <include name="musicHorizontalMenuClick"/>
+          <include name="myStatusHorizontalMenuClick"/>
+          <include name="wallpaperHorizontalMenuClick"/>
+          <include name="horizontalMenuThemeExists"/>
+        </methods>
+      </class> <!-- com.drg.methodFlows.horizontalMenuDetails -->
+      <class name="com.drg.methodFlows.iconChecks">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.drg.methodFlows.iconChecks -->
+    </classes>
+  </test> <!-- horizontalMenu(failed) -->
+  <test name="iconChecks(failed)">
+    <classes>
+      <class name="com.drg.methodFlows.iconChecks">
+        <methods>
+          <include name="headerLogoCheck"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.drg.methodFlows.iconChecks -->
+    </classes>
+  </test> <!-- iconChecks(failed) -->
+</suite> <!-- Failed suite [CVAS_Portal_Automation] -->
