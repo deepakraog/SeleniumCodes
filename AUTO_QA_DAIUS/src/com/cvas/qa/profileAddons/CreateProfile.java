@@ -62,7 +62,7 @@ public class CreateProfile {
 		profile.setPreference("modifyheaders.config.openNewTab", true);
 		profile.setPreference("modifyheaders.headers.count", 2);
 		profile.setPreference("modifyheaders.headers.action0", "Modify");
-		profile.setPreference("modifyheaders.headers.name0", "X_MSISDN");
+		profile.setPreference("modifyheaders.headers.name0", "X-MSISDN");
 		profile.setPreference("modifyheaders.headers.value0", xmsisdn);
 		profile.setPreference("modifyheaders.headers.enabled0", true);
 		profile.setPreference("modifyheaders.headers.action1", "Modify");
