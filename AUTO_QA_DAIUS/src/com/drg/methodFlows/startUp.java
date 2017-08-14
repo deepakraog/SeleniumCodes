@@ -14,8 +14,6 @@ import com.cvas.qa.POM.multiLockerPageObjects;
 import com.cvas.qa.POM.portalHomePageObjects;
 import com.cvas.qa.portalinfo.browserDetails;
 import com.cvas.qa.portalinfo.readProperties;
-import com.sun.jna.platform.win32.OaIdl.SYSKIND;
-
 
 public class startUp {
 

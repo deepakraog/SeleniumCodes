@@ -1,92 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6" started-at="2017-08-09T05:56:57Z" finished-at="2017-08-09T05:56:57Z">
+  <suite name="Default suite" duration-ms="77" started-at="2017-08-14T07:14:46Z" finished-at="2017-08-14T07:14:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6" started-at="2017-08-09T05:56:57Z" finished-at="2017-08-09T05:56:57Z">
+    <test name="Default test" duration-ms="77" started-at="2017-08-14T07:14:46Z" finished-at="2017-08-14T07:14:46Z">
       <class name="com.drg.methodFlows.startUp">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="setup" is-config="true" duration-ms="0" started-at="2017-08-09T11:26:45Z" finished-at="2017-08-09T11:26:45Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to wait for extension background page to load: chrome-extension://idgpnmonknjnojddfkpgkljpfnnfcklj/_generated_background_page.html
-from timeout: Timed out receiving message from renderer: 10.000
-  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11.19 seconds
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'WBLL0317E2597', ip: '172.19.30.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to wait for extension background page to load: chrome-extension://idgpnmonknjnojddfkpgkljpfnnfcklj/_generated_background_page.html
-from timeout: Timed out receiving message from renderer: 10.000
-  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11.19 seconds
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'WBLL0317E2597', ip: '172.19.30.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
-Driver info: driver.version: ChromeDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:184)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:158)
-	at com.cvas.qa.profileAddons.CreateProfile.ChromeProfile(CreateProfile.java:36)
-	at com.cvas.qa.portalinfo.browserDetails.browseEnable(browserDetails.java:25)
-	at com.drg.methodFlows.startUp.setup(startUp.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="setup" is-config="true" duration-ms="24352" started-at="2017-08-14T12:44:21Z" finished-at="2017-08-14T12:44:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="Launch()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="Launch" duration-ms="1" started-at="2017-08-09T11:26:57Z" finished-at="2017-08-09T11:26:57Z">
+        <test-method status="PASS" signature="Launch()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="Launch" duration-ms="23" started-at="2017-08-14T12:44:46Z" finished-at="2017-08-14T12:44:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method status="SKIP" signature="closure()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="closure" is-config="true" duration-ms="0" started-at="2017-08-09T11:26:57Z" finished-at="2017-08-09T11:26:57Z">
+        <test-method status="PASS" signature="closure()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="closure" is-config="true" duration-ms="0" started-at="2017-08-14T12:44:46Z" finished-at="2017-08-14T12:44:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
