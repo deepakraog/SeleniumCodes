@@ -21,10 +21,10 @@ public class startUp {
 	public static WebDriver driver = null;
 	public static LinkedHashSet<String> ll = null;
 	public static portalHomePageObjects pom = null;
-	public static commonPageObjects cpo;
-	public static multiLockerPageObjects mlpo;
-	public static commonActions ca;
-	
+	public static commonPageObjects cpo = null;
+	public static multiLockerPageObjects mlpo = null;
+	public static commonActions ca = null;
+
 	@BeforeSuite
 	public void setup() throws Exception {
 		in = readProperties.driverDetails();
@@ -35,7 +35,7 @@ public class startUp {
 		cpo = new commonPageObjects(driver);
 		mlpo = new multiLockerPageObjects(driver);
 		ca = new commonActions();
-		
+
 	}
 
 	public static WebDriver driverInvok() throws InterruptedException, IOException {
@@ -51,7 +51,7 @@ public class startUp {
 
 	@AfterSuite
 	public void closure() {
-		//driver.quit();
+		// driver.quit();
 	}
 
 }
