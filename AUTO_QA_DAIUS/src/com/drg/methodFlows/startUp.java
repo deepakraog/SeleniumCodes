@@ -45,7 +45,7 @@ public class startUp {
 	@Test
 	public void Launch() throws Throwable {
 		String PageTitle = driver.getTitle();
-		System.out.println("Assertion Check in Launch() of startUp class");
+		System.out.println("Assertion Check in Launch() of startUp class for Title " + PageTitle);
 		Assert.assertNotNull(PageTitle);
 	}
 
