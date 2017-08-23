@@ -51,7 +51,7 @@ public class startUp {
 
 	@AfterSuite
 	public void closure() {
-		// driver.quit();
+		driver.quit();
 	}
 
 }

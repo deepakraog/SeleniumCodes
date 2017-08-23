@@ -1,25 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="77" started-at="2017-08-14T07:14:46Z" finished-at="2017-08-14T07:14:46Z">
+  <suite name="CVAS_Portal_Automation" duration-ms="18033" started-at="2017-08-22T10:25:54Z" finished-at="2017-08-22T10:26:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="77" started-at="2017-08-14T07:14:46Z" finished-at="2017-08-14T07:14:46Z">
+    <test name="initialization" duration-ms="36" started-at="2017-08-22T10:25:54Z" finished-at="2017-08-22T10:25:54Z">
       <class name="com.drg.methodFlows.startUp">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="setup" is-config="true" duration-ms="24352" started-at="2017-08-14T12:44:21Z" finished-at="2017-08-14T12:44:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Launch()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="Launch" duration-ms="23" started-at="2017-08-14T12:44:46Z" finished-at="2017-08-14T12:44:46Z">
+        <test-method status="PASS" signature="Launch()[pri:0, instance:com.drg.methodFlows.startUp@3b088d51]" name="Launch" duration-ms="23" started-at="2017-08-22T15:55:54Z" finished-at="2017-08-22T15:55:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method status="PASS" signature="closure()[pri:0, instance:com.drg.methodFlows.startUp@1e88b3c]" name="closure" is-config="true" duration-ms="0" started-at="2017-08-14T12:44:46Z" finished-at="2017-08-14T12:44:46Z">
+      </class> <!-- com.drg.methodFlows.startUp -->
+    </test> <!-- initialization -->
+    <test name="newUserValidation" duration-ms="3639" started-at="2017-08-22T10:25:54Z" finished-at="2017-08-22T10:25:58Z">
+      <class name="com.drg.methodFlows.isNewuser">
+        <test-method status="PASS" signature="initiate(java.lang.String)[pri:0, instance:com.drg.methodFlows.isNewuser@458c1321]" name="initiate" is-config="true" duration-ms="1427" started-at="2017-08-22T15:55:54Z" finished-at="2017-08-22T15:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Resources\\newUserValidation.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method status="PASS" signature="newUserLoginCheck()[pri:0, instance:com.drg.methodFlows.isNewuser@458c1321]" name="newUserLoginCheck" duration-ms="97" started-at="2017-08-22T15:55:56Z" finished-at="2017-08-22T15:55:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserLoginCheck -->
+        <test-method status="PASS" signature="newUserTNCcheck()[pri:0, instance:com.drg.methodFlows.isNewuser@458c1321]" name="newUserTNCcheck" duration-ms="510" started-at="2017-08-22T15:55:56Z" finished-at="2017-08-22T15:55:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserTNCcheck -->
+        <test-method status="PASS" signature="noSubscriptionCheckMyLocker()[pri:0, instance:com.drg.methodFlows.isNewuser@458c1321]" name="noSubscriptionCheckMyLocker" duration-ms="1602" started-at="2017-08-22T15:55:56Z" finished-at="2017-08-22T15:55:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noSubscriptionCheckMyLocker -->
+      </class> <!-- com.drg.methodFlows.isNewuser -->
+    </test> <!-- newUserValidation -->
+    <test name="horizontalMenu" duration-ms="11189" started-at="2017-08-22T10:25:58Z" finished-at="2017-08-22T10:26:09Z">
+      <class name="com.drg.methodFlows.horizontalMenuDetails">
+        <test-method status="PASS" signature="initiate(java.lang.String)[pri:0, instance:com.drg.methodFlows.horizontalMenuDetails@30a3107a]" name="initiate" is-config="true" duration-ms="92" started-at="2017-08-22T15:55:58Z" finished-at="2017-08-22T15:55:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Resources\\horizontalMenu.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method status="PASS" signature="horizontalMenuThemeExists()[pri:0, instance:com.drg.methodFlows.horizontalMenuDetails@30a3107a]" name="horizontalMenuThemeExists" duration-ms="32" started-at="2017-08-22T15:55:58Z" finished-at="2017-08-22T15:55:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- horizontalMenuThemeExists -->
+        <test-method status="PASS" signature="homeHorizontalMenuClick()[pri:0, instance:com.drg.methodFlows.horizontalMenuDetails@30a3107a]" name="homeHorizontalMenuClick" duration-ms="3107" started-at="2017-08-22T15:55:58Z" finished-at="2017-08-22T15:56:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeHorizontalMenuClick -->
+        <test-method status="PASS" signature="videoHorizontalMenuClick()[pri:0, instance:com.drg.methodFlows.horizontalMenuDetails@30a3107a]" name="videoHorizontalMenuClick" duration-ms="1510" started-at="2017-08-22T15:56:01Z" finished-at="2017-08-22T15:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- videoHorizontalMenuClick -->
+        <test-method status="PASS" signature="gameHorizontalMenuClick()[pri:0, instance:com.drg.methodFlows.horizontalMenuDetails@30a3107a]" name="gameHorizontalMenuClick" duration-ms="1594" started-at="2017-08-22T15:56:03Z" finished-at="2017-08-22T15:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gameHorizontalMenuClick -->
+        <test-method status="PASS" signature="wallpaperHorizontalMenuClick()[pri:0, instance:com.drg.methodFlows.horizontalMenuDetails@30a3107a]" name="wallpaperHorizontalMenuClick" duration-ms="1863" started-at="2017-08-22T15:56:04Z" finished-at="2017-08-22T15:56:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wallpaperHorizontalMenuClick -->
+        <test-method status="PASS" signature="musicHorizontalMenuClick()[pri:0, instance:com.drg.methodFlows.horizontalMenuDetails@30a3107a]" name="musicHorizontalMenuClick" duration-ms="1969" started-at="2017-08-22T15:56:06Z" finished-at="2017-08-22T15:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- musicHorizontalMenuClick -->
+        <test-method status="PASS" signature="myStatusHorizontalMenuClick()[pri:0, instance:com.drg.methodFlows.horizontalMenuDetails@30a3107a]" name="myStatusHorizontalMenuClick" duration-ms="1019" started-at="2017-08-22T15:56:08Z" finished-at="2017-08-22T15:56:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myStatusHorizontalMenuClick -->
+      </class> <!-- com.drg.methodFlows.horizontalMenuDetails -->
+    </test> <!-- horizontalMenu -->
+    <test name="iconChecks" duration-ms="3095" started-at="2017-08-22T10:26:09Z" finished-at="2017-08-22T10:26:12Z">
+      <class name="com.drg.methodFlows.iconChecks">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.drg.methodFlows.iconChecks@3043fe0e]" name="setup" is-config="true" duration-ms="9598" started-at="2017-08-22T15:55:44Z" finished-at="2017-08-22T15:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="initiate(java.lang.String)[pri:0, instance:com.drg.methodFlows.iconChecks@3043fe0e]" name="initiate" is-config="true" duration-ms="3044" started-at="2017-08-22T15:56:09Z" finished-at="2017-08-22T15:56:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Resources\\icons.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method status="PASS" signature="headerLogoCheck()[pri:0, instance:com.drg.methodFlows.iconChecks@3043fe0e]" name="headerLogoCheck" duration-ms="51" started-at="2017-08-22T15:56:12Z" finished-at="2017-08-22T15:56:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerLogoCheck -->
+        <test-method status="PASS" signature="closure()[pri:0, instance:com.drg.methodFlows.iconChecks@3043fe0e]" name="closure" is-config="true" duration-ms="976" started-at="2017-08-22T15:56:12Z" finished-at="2017-08-22T15:56:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-      </class> <!-- com.drg.methodFlows.startUp -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.drg.methodFlows.iconChecks -->
+    </test> <!-- iconChecks -->
+  </suite> <!-- CVAS_Portal_Automation -->
 </testng-results>

@@ -6,6 +6,7 @@
       <class name="com.drg.methodFlows.startUp">
         <methods>
           <include name="Launch"/>
+          <include name="closure"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.drg.methodFlows.startUp -->
